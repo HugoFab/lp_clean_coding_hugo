@@ -16,6 +16,7 @@ class UserViewModel (private val repository: UserRepository) : ViewModel(){
 
     val userList = repository.getPaginatedList(viewModelScope)
 
+    var currentUser : User? = null
 
     fun getUserById(id: String, onSuccess: OnSuccess<User?>) {
         viewModelScope.launch {

@@ -6,5 +6,13 @@
     <fragment
         android:id="@+id/listFragment"
         android:name="fr.hugo.template.ui.fragments.ListFragment"
-        android:label="ListFragment" />
+        android:label="ListFragment" >
+        <action
+            android:id="@+id/action_listFragment_to_detailsUserFragment"
+            app:destination="@id/detailsUserFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsUserFragment"
+        android:name="fr.hugo.template.ui.fragments.DetailsUserFragment"
+        android:label="DetailsUserFragment" />
 </navigation>

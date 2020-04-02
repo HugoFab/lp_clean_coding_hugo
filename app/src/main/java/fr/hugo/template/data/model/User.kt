@@ -20,6 +20,13 @@ data class User(
     @SerializedName("events_url") val events_url: String,
     @SerializedName("received_events_url") val received_events_url: String,
     @SerializedName("type") val type: String,
-    @SerializedName("site_admin") val site_admin: Boolean
+    @SerializedName("site_admin") val site_admin: Boolean,
+    @SerializedName("created_at") val created_at: String?= null,
+    @SerializedName("public_repos") val public_repos: Int?= null,
+    @SerializedName("followers") val followers: Int?= null,
+    @SerializedName("location") val location: String?= null,
+    @SerializedName("email") val email: String?= null,
+    @SerializedName("name") val name: String? = null,
+    @SerializedName("blog") val blog: String? = null
 
 )
