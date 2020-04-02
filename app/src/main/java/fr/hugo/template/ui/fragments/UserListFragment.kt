@@ -53,7 +53,7 @@ class ListFragment : Fragment(),OnUserClickListener {
     }
 
     override fun invoke(view: View, user: User) {
-        userViewModel.getUserById(user.login){
+        userViewModel.getUserById(/*user.id.toString()*/"1"){
             Log.d("Current",it.toString())
             userViewModel.currentUser = it
         }
